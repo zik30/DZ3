@@ -1,7 +1,9 @@
-var min = (a = prompt('Введите первое число:'), b=prompt('Введите второе число:')) =>{
-    console.log("Числа: "+ a + ", "+ b)
-    if (a > b) return b;
-    if (a < b) return a;
-    else return alert('Введите числа!')
+var minNumber = (a, b)=>{
+    a=Number(prompt("Enter first number"));
+    b=Number(prompt("Enter second number"));
+    console.log(`Числа: ${a}, ${b}`)
+    if(a===b) return ('Обе числа равны!')
+    if(a<b) return a
+    return b;
 }
-console.log(`Минимальное число: ${min()}`)
+console.log(`Минимальное число: ${minNumber()}`)
