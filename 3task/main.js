@@ -1,5 +1,8 @@
-var calculator = (a = parseInt(prompt('Введите первое число: ')), b= prompt('Введите арифметическое действие'), c= parseInt(prompt('Введите второе число: '))) =>{
+var calculator = (a =prompt('Введите первое число: '), b= prompt('Введите арифметическое действие'), c= prompt('Введите второе число: ')) =>{
     console.log(a, b, c)
+    a=Number(a)
+    c=Number(c)
+
     if(b === "+") return a + c
     if(b === "-") return a-c
     if(b === "*") return a*c
@@ -8,7 +11,5 @@ var calculator = (a = parseInt(prompt('Введите первое число: '
         return a/c
     }
 }
-// var num1 = parseInt(prompt('Введите первое число: '))
-// var func = prompt('Введите арифметическое действие')
-// var num2 = parseInt(prompt('Введите второе число: '))
+
 console.log(calculator())

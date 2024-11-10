@@ -3,4 +3,4 @@ var lengthStr = ( str = prompt("Введите строку")) => {
     return str.length
 }
 
-console.log('Длина строки: ' + lengthStr())
+console.log(`Длина строки: ${lengthStr()}`)
